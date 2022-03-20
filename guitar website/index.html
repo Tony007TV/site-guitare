@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitare</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+            <span><a href="./index.html">Guitare <span>- Accueil</span></a></span>
+            <ul>
+                <li><a href="./histoire.html">Histoire</a></li>
+                <li><a href="./genres.html">Genres</a></li>
+                <li><a href="./artistes.html">Artistes</a></li>
+            </ul>
+    </header>
+    <div class="title">
+        <span>Guitare</span>
+        <div>Acoust que</div>
+        <span style="font-size:3rem;margin-left:0.5vw;">et autres...</span>
+        <img src="images/guitar.png" alt="acoustic guitar">
+    </div>
+    <main>
+        <section id="Histoire">
+            <div>
+                <span><a href="./histoire.html">Histoire</a></span>
+            </div>
+        </section>
+        <section id="Genres">
+            <div>
+                <span><a href="./genres.html">Genres</a></span>
+            </div>
+        </section>
+        <section id="Artistes">
+            <div>
+                <span><a href="./artistes.html">Artistes</a></span>
+            </div>
+        </section>
+        
+    </main>
+    <script>
+        window.addEventListener("scroll", function() {
+            let header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0)
+        })
+    </script>
+</body>
+</html>
+
+

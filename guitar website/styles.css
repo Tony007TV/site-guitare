@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+html {
+    scroll-behavior: smooth ;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color:#d1a650;
+    z-index: 2;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+a:hover {
+    color:#ffd37b;
+}
+
+body {
+    height: 0.1vh;
+    background-color: rgb(73,67,53);
+    background: radial-gradient(circle, rgb(34, 34, 33) 1%, rgb(19, 19, 19) 100%) ;
+    font-family: 'Open Sans';
+}
+
+header {
+    padding: 1vh 1vw;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    z-index: 100;
+}
+
+header.sticky {
+    background: radial-gradient(circle, rgb(41, 41, 40) 1%, rgb(19, 19, 19) 100%);
+    box-shadow: inset white;
+}
+
+header span {
+    position: relative;
+    font-size: 2rem;
+    font-family: 'Dancing Script';
+}
+
+header a span {
+    font-size:x-large;
+    color:#ffd37ba8
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 32vw;
+    list-style-type: none;
+}
+
+header li {
+    position: relative;
+    margin: 0 1vw;
+}
+
+.title {
+    font-size: 3rem;
+    position: absolute;
+    top: 10vh;
+    left: 15vw;
+    z-index: -1;
+}
+
+.title span {
+    font-size: 10rem;
+    font-family: 'Dancing Script';
+    margin:0;
+}
+
+.title div {
+    font-family: 'Poppins';
+    font-size: 9rem;
+    letter-spacing: 4vw;
+    margin: -5vh 0;
+}
+
+
+
+.title img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
+    position: absolute;
+    top: -20vh;
+    left: -5vw;
+    z-index: -1;
+    transform: rotate(-90deg);
+}
+
+main {
+    position: absolute;
+    top: 50vh;
+    margin: auto 10vw;
+    z-index: -3;
+}
+
+section {
+    transition: all 0.3s ease 0s;
+    margin: 5vh 0;
+    border: solid #d1a650 0.2vw;
+    border-radius: 10vh;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+hr {
+    height: 1px;
+    background-color: #d1a650;
+    margin: 2vh 0;
+    border:none;
+}
+
+section div {
+    width: 50vw;
+    height: 10vh;
+    display: flex;
+    overflow: hidden;
+}
+
+section span {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #d1a650;
+    margin: auto 2vw;
+}
+
+main section:hover {
+    transform: scale(1.1);
+}
+
+article p{
+    display: flex;
+    justify-content: space-evenly;
+    font-size:larger;
+    line-height: 180%;
+    margin-bottom: 5vh;
+}
+article p span {
+    margin: 0 3vw
+}
+
+#Histoire {
+    background-image: url('images/histoire.jpg');
+}
+
+#Genres {
+    background-image: url('images/genres.jpg');
+    background-position: -10px -50px;
+}
+
+#Artistes {
+    background-image: url('images/artistes.jpg');
+    background-position: 90px -130px;
+}

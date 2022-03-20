@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitare</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="display: flex; flex-direction:column">  
+    <header>
+            <span><a href="./index.html">Guitare <span>- Artistes</span></a></span>
+            <ul>
+                <li><a href="./histoire.html">Histoire</a></li>
+                <li><a href="./genres.html">Genres</a></li>
+                <li><a href="./artistes.html">Artistes</a></li>
+            </ul>
+    </header>
+    
+    <section id="Artistes" style="width: 50vw; margin:20vh auto; margin-bottom:5vh;">
+        <div>
+            <span>Artistes</span>
+        </div>
+    </section>
+    <article style="width: 50vw; margin:0px auto">
+        <div style="display: flex; border:solid #d1a650 0.1vw; border-radius:1vw; margin-bottom:5vh">
+            <img src="./images/artistes/hendrix.jpeg" alt="photo de Jimi Hendrix" width="400vw" style="margin-right: 2vw;border-radius:1vw;">
+            <div>
+                <h3 style="font-size: 3rem;">Jimi Hendrix</h3>
+                <h4 style="font-size: 1.5rem;">1942-1970</h4>
+                <br>
+                <span><b>Nationalité : </b>États-Unis</span><br><br>
+                <span><b>Groupe : </b>The Jimi Hendrix Experience</span><br><br>
+                <span><b>Genre musical : </b>Rock, Blues, Jazz</span>
+            </div>
+        </div>
+
+        <div style="display: flex; border:solid #d1a650 0.1vw; border-radius:1vw; margin-bottom:5vh">
+            <img src="./images/artistes/slash.jpg" alt="photo de Jimi Hendrix" width="400vw" style="margin-right: 2vw;border-radius:1vw;">
+            <div>
+                <h3 style="font-size: 3rem;">Slash (Saul Hudson)</h3>
+                <h4 style="font-size: 1.5rem;">1965 (56 ans)</h4>
+                <br>
+                <span><b>Nationalité : </b>Royaume-Uni</span><br><br>
+                <span><b>Groupe : </b>Guns N' Roses</span><br><br>
+                <span><b>Genre musical : </b>Hard rock, blues rock, heavy metal</span>
+            </div>
+        </div>
+
+        <div style="display: flex; border:solid #d1a650 0.1vw; border-radius:1vw; margin-bottom:5vh">
+            <img src="./images/artistes/santa.jpg" alt="photo de Jimi Hendrix" width="400vw" style="margin-right: 2vw;border-radius:1vw;">
+            <div>
+                <h3 style="font-size: 3rem;">Carlos Santana</h3>
+                <h4 style="font-size: 1.5rem;">1947 (74 ans)</h4>
+                <br>
+                <span><b>Nationalité : </b>Mexique</span><br><br>
+                <span><b>Groupe : </b>Santana Blues Band</span><br><br>
+                <span><b>Genre musical : </b>Blues rock, jazz fusion, rock latino</span>
+            </div>
+        </div>
+        
+    </article>
+    <script>
+        window.addEventListener("scroll", function() {
+            let header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0)
+        })
+    </script>
+    
+</body>
+</html>
